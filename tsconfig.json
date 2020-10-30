@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "moduleResolution": "node",
+    "lib": ["es6"],
+    "outDir": "dist",
+    "strict": true,
+    "module": "commonjs",
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@__tests__/*": ["./__tests__/*"]
+    },
+    "rootDirs": [
+      "./src",
+      "./__tests__"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  
+  "include": ["./src/**/*.ts", "./__tests__/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
+
